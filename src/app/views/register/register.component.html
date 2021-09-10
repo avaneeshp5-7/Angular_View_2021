@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 py-5" style="margin: auto;">
+           <div class="card main-main">
+               <div class="card-header bg-set text-white">
+                   New  Account
+               </div>
+               <div class="card-body">
+                <form [formGroup]="userForm">
+                    <div class="form-group row">
+                      <label for="colFormLabel" class="col-md-3 col-form-label ">Full Name<span style="color: red;">*</span></label>
+                      <div class="col-sm-9">
+                        <input type="text" formControlName="fullName" class="form-control mt-2 shadow-none" id="colFormLabel" placeholder="Full name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-3 col-form-label">Email<span style="color: red;">*</span></label>
+                        <div class="col-sm-9">
+                          <input type="email" formControlName="email" class="form-control mt-2 shadow-none" id="email" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="contact"  class="col-md-3 col-form-label">Contact<span style="color: red;">*</span></label>
+                        <div class="col-sm-9">
+                          <input type="text" formControlName="contact" class="form-control mt-2 shadow-none" id="contact" placeholder="Contact">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="password" class="col-md-3 col-form-label">Password<span style="color: red;">*</span></label>
+                        <div class="col-sm-9">
+                          <input type="password" formControlName="password" class="form-control mt-2 shadow-none" id="colFormLabel" placeholder="Password">
+                        </div>
+                      </div><br>
+
+                      <div class="form-group row">
+                        <div class="col-md-3">
+                            <input type="button" (click)="createAccounts()" class="btn btn-success shadow-none set-Submit" value="Submit">
+                          </div>
+                        <div class="col-md-5">
+                          <!-- <span class="set-forgot">forgot password?</span> -->
+                        </div>
+                        <div class="col-md-4" routerLink="/login">
+                            <span class="set-have-account" (click)="gotoLogin()"> I have Account?</span>
+                          </div>
+                      </div>
+                  </form>
+               </div>
+           </div>
+        </div>
+    </div>
+    <!-- Tab panes -->
+</div>

@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar">
+    <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item activeDash">
+                    <a routerLink="/dashboard"  class="nav-link" style="color: #15b000;">
+                        <i class="fas fa-home"></i>Home<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a routerLink="/dashboard" routerLinkActive="active" class="nav-link">
+                       Users</a>
+                </li>
+            </ul>
+            <ul class="d-flex">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                       {{ user.fullName}}
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <!-- <li>
+                            h
+                        </li> -->
+                        <!-- <li class="divider"></li> -->
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="cardOne">
+                                            <div class="card-header">
+                                                <strong>Admin Details</strong>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <div> {{user.fullName}}</div>
+                                                 <div>{{user.email}}</div>
+                                                <div> {{user.contact}}</div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-danger shadow-none" (click)="logOut()" style="width: 100%;">Log Out</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <app-dashboard></app-dashboard>

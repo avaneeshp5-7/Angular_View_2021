@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~angular-notifier/styles";
+/* @import "~/angular-notifier/styles/theme";
+@import "~/angular-notifier/styles/types"; */
+
+/* .main-main-1
+    {
+    background: linear-gradient(to top rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url('/assets/1.jpg');
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 107vh;
+} */
+
+.active{
+    color: #15b000;
+    font-weight: bold;
+    font-size: 12px;
+    /* border-left: 3px solid #15b000; */
+    /* border-radius: 10px; */
+    border-bottom: 3px solid #15b000;
+}
+.activeDash{
+    color: #15b000;
+    font-weight: bold;
+    font-size: 12px;
+    /* border-bottom: 3px solid #15b000; */
+}
+  
+  /* @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } */
