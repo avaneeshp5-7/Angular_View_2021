@@ -27,6 +27,7 @@ export class UserListComponent implements OnInit {
     this._CU.delete(id).subscribe((data: any) => {
       if (data.success == true) {
         this.notifier.notify('success', data.message)
+        this.allUser();
       } else {
         this.notifier.notify('error', data.message)
       }
