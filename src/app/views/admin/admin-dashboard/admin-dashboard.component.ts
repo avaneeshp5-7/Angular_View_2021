@@ -17,6 +17,7 @@ export class AdminDashboardComponent implements OnInit {
       this.user = JSON.parse(localStorage.getItem('userData'))
     }
   }
+  
   logOut(){
     if (localStorage.getItem('userData')!=null) {
       this.auth.logout();

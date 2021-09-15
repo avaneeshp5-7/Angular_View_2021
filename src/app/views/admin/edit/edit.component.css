@@ -1,0 +1,36 @@
+.bg-set{
+    background-color: rgb(21, 21, 92);
+    border: 4px solid rgb(21, 21, 92);
+}
+.set-Submit{
+    width: 100px;
+    border-radius: 0px;
+}
+.set-forgot{
+    color: rgb(231, 88, 52);
+    cursor: pointer;
+}
+.set-forgot:hover{
+    color: rgb(231, 88, 52);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.set-have-account{
+    color: rgb(49, 6, 236);
+    cursor: pointer;
+}
+.set-have-account:hover{
+    color: rgb(49, 6, 236);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.main-main{
+    box-shadow: 0 2px 12px 0 rgb(32 33 36 / 28%);
+}
+
+.card-header .set_close{
+    color: crimson;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+}

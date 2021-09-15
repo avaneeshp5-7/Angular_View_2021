@@ -4,7 +4,10 @@
 
 export const environment = {
   apiUrl:'http://localhost:3000/',
-  production: false
+  production: false,
+  pageNumber:1,
+  itemPerPage:5,
+  perPageArry:[5,10,20,30,50,100]
 };
 
 /*

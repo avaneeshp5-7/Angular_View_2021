@@ -66,7 +66,11 @@ const customNotifierOptions: NotifierOptions = {
     ReactiveFormsModule ,
     CommonModule  
   ],
-  providers: [{provide:HTTP_INTERCEPTORS,useClass:InterceptInterceptor,multi:true}],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: InterceptInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

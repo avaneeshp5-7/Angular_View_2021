@@ -1,0 +1,21 @@
+.table-dark{
+    background-color: rgb(21, 21, 92);
+    --bs-table-bg: rgb(21, 21, 92); 
+    --bs-table-striped-bg: rgb(21, 21, 92);
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: rgb(21, 21, 92);
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: rgb(21, 21, 92);
+    --bs-table-hover-color: #fff;
+    color: #fff;
+}
+
+.nameSet:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+.card-header{
+    background-color: rgb(21, 21, 92);
+    color: #fff;
+}

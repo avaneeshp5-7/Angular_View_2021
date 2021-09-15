@@ -1,1 +1,35 @@
-<p>user-details works!</p>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5" style="margin: auto;">
+            <div class="card">
+                <div class="card-header"><strong>User Details  <i class='bx bx-window-close set_close'[routerLink]="['/dashboard']"></i></strong></div>
+                <div class="card-body">
+                     <div class="row">
+                         <div class="col-md-4">Full Name :</div>
+                         <div class="col-md-8">{{user?.fullName}}</div> 
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4">Email :</div>
+                        <div class="col-md-8">{{user?.email}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">Contact :</div>
+                        <div class="col-md-8">{{user?.contact}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">Registered At :</div>
+                        <div class="col-md-8">{{user?.created_at}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">Status :</div>
+                        <div class="col-md-8">{{user?.status?'Active':'Deactive'}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

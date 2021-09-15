@@ -1,0 +1,11 @@
+.card-header{
+    background-color:rgb(21, 21, 92);
+    color: #fff;
+}
+
+.card-header .set_close{
+    color: crimson;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+}

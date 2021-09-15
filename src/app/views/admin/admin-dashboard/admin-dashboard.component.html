@@ -1,60 +1,41 @@
-<nav class="navbar navbar-expand-lg navbar-light navbar">
-    <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item activeDash">
-                    <a routerLink="/dashboard"  class="nav-link" style="color: #15b000;">
-                        <i class="fas fa-home"></i>Home<span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                    <a routerLink="/dashboard" routerLinkActive="active" class="nav-link">
-                       Users</a>
-                </li>
-            </ul>
-            <ul class="d-flex">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                       {{ user.fullName}}
-                    </a>
-                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <!-- <li>
-                            h
-                        </li> -->
-                        <!-- <li class="divider"></li> -->
-                        <li>
-                            <div class="navbar-login">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="cardOne">
-                                            <div class="card-header">
-                                                <strong>Admin Details</strong>
-                                            </div>
-                                            <div class="card-body text-center">
-                                                <div> {{user.fullName}}</div>
-                                                 <div>{{user.email}}</div>
-                                                <div> {{user.contact}}</div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <button class="btn btn-danger shadow-none" (click)="logOut()" style="width: 100%;">Log Out</button>
-                                            </div>
-                                        </div>
+<div class="card" style="border-radius: 0px;">
+    <div class="card-body">
+        <img src="/assets/appin1.png" class="setAdminImg1"><span class="set_app"> App</span> <span
+            class="set_india">India</span>
+        <div class="dropdown" style="float: right;">
+            <i class="float-right " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/assets/adm1.png" class="setAdminImg">
+            </i>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" 
+            style="margin: 0px;inset: 15px auto auto 0px;transform: translate(-270px, 29px);">
+                <li>
+                    <div class="navbar-login">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="cardOne">
+                                    <div class="card-header">
+                                        <strong>Admin Details</strong>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <div> {{user.fullName}}</div>
+                                        <div>{{user.email}}</div>
+                                        <div> {{user.contact}}</div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-danger shadow-none" (click)="logOut()"
+                                            style="width: 100%;">Log Out</button>
                                     </div>
                                 </div>
-                            </div><br>
-                        </li>
-                    </ul>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
-</nav>
+</div>
+<br>
+<div class="container">
+    <router-outlet> </router-outlet>
+</div>
 
-
-    <app-dashboard></app-dashboard>

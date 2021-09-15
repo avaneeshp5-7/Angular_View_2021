@@ -15,7 +15,15 @@ export class CommonService {
     return this.source.post(`${environment.apiUrl}user_registraion`,data);
   }
   
-  userLogin(data){
-    return this.source.post(`${environment.apiUrl}user_login`,data);
+  getUaers(pageNumber:Number,ItemPerPage:Number){
+    return this.source.get(`${environment.apiUrl}all_user?pageNumber=${pageNumber}&itemPerPage=${ItemPerPage}`);
+  }
+
+  getUaerDetails(userId:any){
+    return this.source.get(`${environment.apiUrl}single_user?userId=${userId}`);
+  }
+
+  update(userId:any,data:any){
+    return this.source.post(`${environment.apiUrl}update_user?userId=${userId}`,data);
   }
 }
