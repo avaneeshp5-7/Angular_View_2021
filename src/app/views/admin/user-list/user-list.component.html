@@ -24,7 +24,7 @@
                     <td>{{user?.updated_at}}</td>
                     <td>{{user?.status?'Active':'Deactive'}}</td>
                     <td>
-                        <button class="btn btn-sm btn-danger shadow-none">Delete</button>&nbsp;
+                        <button class="btn btn-sm btn-danger shadow-none" (click)="delete(user?.userId)">Delete</button>&nbsp;
                         <button class="btn btn-sm btn-primary shadow-none" [routerLink]="['/dashboard/edit',user.userId]">Edit</button>
                     </td>
                 </tr>

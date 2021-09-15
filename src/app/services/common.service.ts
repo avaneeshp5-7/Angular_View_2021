@@ -26,4 +26,8 @@ export class CommonService {
   update(userId:any,data:any){
     return this.source.post(`${environment.apiUrl}update_user?userId=${userId}`,data);
   }
+
+  delete(userId:any){
+    return this.source.post(`${environment.apiUrl}delete_user?userId=${userId}`,'');
+  }
 }
